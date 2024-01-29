@@ -1,7 +1,6 @@
 import java.util.Date;
 import java.util.Random;
 import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
         University university = new University();
@@ -73,14 +72,15 @@ public class Main {
         }
 
         // get a teacher department then change it and print again
-        /*Teacher teacherTest = university.getTeachers().getFirst();
+        Teacher teacherTest = university.getTeachers().get(0);
         System.out.println("Teacher department before change: " + teacherTest.getDepartment());
         teacherTest.setDepartment(department2);
         System.out.println("Teacher department after change: " + teacherTest.getDepartment());
 
         // get a student subjects then add one and print again
-        Student studentTest = university.getStudents().getFirst();
+        Student studentTest = university.getStudents().get(0);
         System.out.println("Student subject before change: " + studentTest.getSubjects());
+        studentTest.removeSubject(subject3);
         studentTest.addSubject(subject1);
         System.out.println("Student subject after change: " + studentTest.getSubjects());
 
@@ -88,7 +88,7 @@ public class Main {
         ServiceStaff serviceStaffTest = university.getServiceStaffs().get(2);
         System.out.println("ServiceStaff department before change: " + serviceStaffTest.getSection());
         serviceStaffTest.setSection(section3);
-        System.out.println("ServiceStaff department after change: " + serviceStaffTest.getSection());*/
+        System.out.println("ServiceStaff department after change: " + serviceStaffTest.getSection());
         
 
     }
